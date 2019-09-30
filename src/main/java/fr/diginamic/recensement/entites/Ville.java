@@ -4,7 +4,7 @@ package fr.diginamic.recensement.entites;
  * @author DIGINAMIC
  *
  */
-public class Ville implements EnsemblePop {
+public class Ville {
 	
 	/** codeRegion : code de la région */
 	private String codeRegion;

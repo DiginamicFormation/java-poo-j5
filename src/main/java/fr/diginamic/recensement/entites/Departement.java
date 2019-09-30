@@ -7,7 +7,7 @@ import java.util.List;
  * @author DIGINAMIC
  *
  */
-public class Departement implements EnsemblePop {
+public class Departement {
 
 	/** code : String*/
 	private String code;
