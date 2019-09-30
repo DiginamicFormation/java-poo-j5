@@ -7,7 +7,7 @@ import java.util.List;
  * @author DIGINAMIC
  *
  */
-public class Region implements Comparable<Region>{
+public class Region implements EnsemblePop {
 
 	/** code : String*/
 	private String code;
@@ -35,18 +35,6 @@ public class Region implements Comparable<Region>{
 	public void addVille(Ville ville){
 		villes.add(ville);
 		this.population=this.population+ville.getPopulation();
-	}
-	
-
-	@Override
-	public int compareTo(Region o) {
-		if (population>o.getPopulation()){
-			return 1;
-		}
-		else if (population<o.getPopulation()){
-			return -1;
-		}
-		return 0;
 	}
 	
 	/** Getter

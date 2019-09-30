@@ -10,6 +10,7 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Region;
 import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 import fr.diginamic.recensement.services.comparators.RegionComparateur;
 
 /** Affichage des régions les plus peuplées
@@ -37,7 +38,7 @@ public class AfficherRegionsPlusPeuplees extends MenuService {
 		List<Region> regions = new ArrayList<Region>();
 		regions.addAll(mapRegions.values());
 		
-		Collections.sort(regions, new RegionComparateur(false));
+		Collections.sort(regions, new EnsemblePopComparateur(false));
 		
 		for (int i=0; i<10; i++){
 			Region region = regions.get(i);

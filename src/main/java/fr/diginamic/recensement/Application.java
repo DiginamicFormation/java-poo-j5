@@ -1,6 +1,11 @@
 package fr.diginamic.recensement;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
+
+import org.apache.commons.io.FileUtils;
 
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.services.AfficherDepartementsPlusPeuplees;
@@ -11,6 +16,7 @@ import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesRegion;
 import fr.diginamic.recensement.services.RecherchePopulationDepartement;
 import fr.diginamic.recensement.services.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.RecherchePopulationVille;
+import fr.diginamic.recensement.utils.ParseurVille;
 import fr.diginamic.recensement.utils.RecensementUtils;
 
 /** Application de traitement des données de recensement de population
@@ -23,12 +29,8 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		
 		Recensement recensement = RecensementUtils.lire("C:/temp/recensement population 2016.csv");
-
-		if (recensement==null){
-			System.out.println("L'application doit s'arrêtée en raison d'une erreur d'exécution.");
-			System.exit(0);
-		}
 		
 		// Menu
 		int choix = 0;
@@ -77,8 +79,11 @@ public class Application {
 				AfficherVillesPlusPeupleesFrance villesPlusPeupleesFrance = new AfficherVillesPlusPeupleesFrance();
 				villesPlusPeupleesFrance.traiter(recensement, scanner);
 				break;
+			case 9:
+				System.out.println("Au revoir.");
+				break;
 			}
-		} while (choix!=99);
+		} while (choix!=9);
 		
 		scanner.close();
 		
@@ -95,8 +100,8 @@ public class Application {
 		System.out.println("4. Afficher les 10 régions les plus peuplées.");
 		System.out.println("5. Afficher les 10 départements les plus peuplés.");
 		System.out.println("6. Afficher les 10 villes les plus peuplées d'un département.");
-		System.out.println("7.  Afficher les 10 villes les plus peuplées d'une région.");
-		System.out.println("8.  Afficher les 10 villes les plus peuplées de France.");
-		System.out.println("99. Sortir");
+		System.out.println("7. Afficher les 10 villes les plus peuplées d'une région.");
+		System.out.println("8. Afficher les 10 villes les plus peuplées de France.");
+		System.out.println("9. Sortir");
 	}
 }
