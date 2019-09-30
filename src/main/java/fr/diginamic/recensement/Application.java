@@ -1,11 +1,6 @@
 package fr.diginamic.recensement;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
 import java.util.Scanner;
-
-import org.apache.commons.io.FileUtils;
 
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.services.AfficherDepartementsPlusPeuplees;
@@ -16,7 +11,6 @@ import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesRegion;
 import fr.diginamic.recensement.services.RecherchePopulationDepartement;
 import fr.diginamic.recensement.services.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.RecherchePopulationVille;
-import fr.diginamic.recensement.utils.ParseurVille;
 import fr.diginamic.recensement.utils.RecensementUtils;
 
 /** Application de traitement des données de recensement de population
