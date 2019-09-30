@@ -1,0 +1,2 @@
+Le correctif est réparti sur différentes branches numérotées ETAPE 1 à ETAPE 8.
+Pour passer d'une branche à l'autre depuis Spring Tool Suite, faites un clic droit sur votre projet, sélectionnez TEAM >> Switch to >> [branche]
