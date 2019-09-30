@@ -2,26 +2,26 @@ package fr.diginamic.recensement.services.comparators;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.entites.Departement;
+import fr.diginamic.recensement.entites.EnsemblePop;
 
-/** Comparateur de 2 départements
+/** Permet de comparer 2 instances de classe qui implémentent l'interface {@link EnsemblePop}
  * @author DIGINAMIC
  *
  */
-public class DepartementComparateur implements Comparator<Departement> {
-	
+public class EnsemblePopComparateur implements Comparator<EnsemblePop>{
+
 	/**  Sens du tri: ascendant (true) ou descendant (false) */
 	private boolean asc;
 	
 	/** Constructeur
 	 * @param asc sens du tri
 	 */
-	public DepartementComparateur(boolean asc){
+	public EnsemblePopComparateur(boolean asc){
 		this.asc=asc;
 	}
-
+	
 	@Override
-	public int compare(Departement o1, Departement o2) {
+	public int compare(EnsemblePop o1, EnsemblePop o2) {
 		if (asc){
 			if (o1.getPopulation()>o2.getPopulation()){
 				return 1;

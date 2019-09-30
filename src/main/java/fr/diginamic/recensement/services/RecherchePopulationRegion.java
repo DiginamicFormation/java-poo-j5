@@ -6,7 +6,7 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 
-/** Recherche et affichage de la population d'une ville
+/** Recherche et affichage de la population d'une région
  * @author DIGINAMIC
  *
  */
@@ -15,7 +15,7 @@ public class RecherchePopulationRegion extends MenuService {
 	@Override
 	public void traiter(Recensement rec, Scanner scanner) {
 		
-		System.out.println("Quelle est le code de la région ? ");
+		System.out.println("Quel est le code de la région recherchée ? ");
 		String choix = scanner.nextLine();
 		
 		List<Ville> villes = rec.getVilles();
