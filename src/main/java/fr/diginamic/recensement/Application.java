@@ -6,6 +6,7 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.services.AfficherDepartementsPlusPeuplees;
 import fr.diginamic.recensement.services.AfficherRegionsPlusPeuplees;
 import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesDepartement;
+import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesFrance;
 import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesRegion;
 import fr.diginamic.recensement.services.RecherchePopulationDepartement;
 import fr.diginamic.recensement.services.RecherchePopulationRegion;
@@ -72,6 +73,10 @@ public class Application {
 				AfficherVillesPlusPeupleesRegion villesPlusPeupleesRegion = new AfficherVillesPlusPeupleesRegion();
 				villesPlusPeupleesRegion.traiter(recensement, scanner);
 				break;
+			case 8:
+				AfficherVillesPlusPeupleesFrance villesPlusPeupleesFrance = new AfficherVillesPlusPeupleesFrance();
+				villesPlusPeupleesFrance.traiter(recensement, scanner);
+				break;
 			}
 		} while (choix!=99);
 		
@@ -91,6 +96,7 @@ public class Application {
 		System.out.println("5. Afficher les 10 départements les plus peuplés.");
 		System.out.println("6. Afficher les 10 villes les plus peuplées d'un département.");
 		System.out.println("7.  Afficher les 10 villes les plus peuplées d'une région.");
+		System.out.println("8.  Afficher les 10 villes les plus peuplées de France.");
 		System.out.println("99. Sortir");
 	}
 }
