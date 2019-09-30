@@ -31,6 +31,11 @@ public class Application {
 		Scanner scanner = new Scanner(System.in);
 		
 		Recensement recensement = RecensementUtils.lire("C:/temp/recensement population 2016.csv");
+
+		if (recensement==null){
+			System.out.println("L'application doit s'arrêtée en raison d'une erreur d'exécution.");
+			System.exit(0);
+		}
 		
 		// Menu
 		int choix = 0;

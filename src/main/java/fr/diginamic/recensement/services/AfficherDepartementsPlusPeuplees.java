@@ -10,7 +10,7 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Departement;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.DepartementComparateur;
+import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
 /** Affichage des départements les plus peuplés
  * @author DIGINAMIC
@@ -37,7 +37,7 @@ public class AfficherDepartementsPlusPeuplees extends MenuService {
 		List<Departement> departements = new ArrayList<Departement>();
 		departements.addAll(mapDepts.values());
 		
-		Collections.sort(departements, new DepartementComparateur(false));
+		Collections.sort(departements, new EnsemblePopComparateur(false));
 		
 		for (int i=0; i<10; i++){
 			Departement departement = departements.get(i);
