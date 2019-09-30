@@ -3,13 +3,6 @@ package fr.diginamic.recensement;
 import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.services.AfficherDepartementsPlusPeuplees;
-import fr.diginamic.recensement.services.AfficherRegionsPlusPeuplees;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesDepartement;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesFrance;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesRegion;
-import fr.diginamic.recensement.services.RecherchePopulationDepartement;
-import fr.diginamic.recensement.services.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.RecherchePopulationVille;
 import fr.diginamic.recensement.utils.RecensementUtils;
 
@@ -50,32 +43,18 @@ public class Application {
 				rechercheVille.traiter(recensement, scanner);
 				break;
 			case 2:
-				RecherchePopulationDepartement rechercheDept = new RecherchePopulationDepartement();
-				rechercheDept.traiter(recensement, scanner);
 				break;
 			case 3:
-				RecherchePopulationRegion rechercheRegion = new RecherchePopulationRegion();
-				rechercheRegion.traiter(recensement, scanner);
 				break;
 			case 4:
-				AfficherRegionsPlusPeuplees regionsPlusPeuplees = new AfficherRegionsPlusPeuplees();
-				regionsPlusPeuplees.traiter(recensement, scanner);
 				break;
 			case 5:
-				AfficherDepartementsPlusPeuplees deptsPlusPeuplees = new AfficherDepartementsPlusPeuplees();
-				deptsPlusPeuplees.traiter(recensement, scanner);
 				break;
 			case 6:
-				AfficherVillesPlusPeupleesDepartement villesPlusPeupleesDept = new AfficherVillesPlusPeupleesDepartement();
-				villesPlusPeupleesDept.traiter(recensement, scanner);
 				break;
 			case 7:
-				AfficherVillesPlusPeupleesRegion villesPlusPeupleesRegion = new AfficherVillesPlusPeupleesRegion();
-				villesPlusPeupleesRegion.traiter(recensement, scanner);
 				break;
 			case 8:
-				AfficherVillesPlusPeupleesFrance villesPlusPeupleesFrance = new AfficherVillesPlusPeupleesFrance();
-				villesPlusPeupleesFrance.traiter(recensement, scanner);
 				break;
 			}
 		} while (choix!=99);
