@@ -15,14 +15,12 @@ public class RecherchePopulationVille extends MenuService {
 	@Override
 	public void traiter(Recensement rec, Scanner scanner) {
 		
-		System.out.println("Quel est le nom de la ville ?");
+		System.out.println("Quel est le nom de la ville recherchée ? ");
 		String choix = scanner.nextLine();
 		
 		List<Ville> villes = rec.getVilles();
 		for (Ville ville: villes){
-			
-			// Attention il faut utiliser equalsIgnoreCase afin d'ignore majuscules et minuscules
-			if (ville.getNom().equalsIgnoreCase(choix)){
+			if (ville.getNom().equalsIgnoreCase(choix) || ville.getNom().toLowerCase().startsWith(choix.toLowerCase()+" ")){
 				System.out.println(ville.getNom()+" : "+ville.getPopulation());
 			}
 		}
