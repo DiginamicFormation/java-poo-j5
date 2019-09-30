@@ -15,7 +15,7 @@ public class RecherchePopulationDepartement extends MenuService {
 	@Override
 	public void traiter(Recensement rec, Scanner scanner) {
 		
-		System.out.println("Quelle est le code du département ? ");
+		System.out.println("Quel est le code du département recherché ? ");
 		String choix = scanner.nextLine();
 		
 		List<Ville> villes = rec.getVilles();
