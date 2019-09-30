@@ -10,7 +10,7 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Region;
 import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.RegionComparateur;
+import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
 /** Affichage des régions les plus peuplées
  * @author DIGINAMIC
@@ -52,7 +52,7 @@ public class AfficherRegionsPlusPeuplees extends MenuService {
 		
 		// On créé un comparateur de Region pour trier la liste des régions dans l'ordre
 		// de populations décroissantes.
-		Collections.sort(regions, new RegionComparateur(false));
+		Collections.sort(regions, new EnsemblePopComparateur(false));
 		
 		// On affiche les 10 première régions de la liste triée.
 		for (int i=0; i<10; i++){

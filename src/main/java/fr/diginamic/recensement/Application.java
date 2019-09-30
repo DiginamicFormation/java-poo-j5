@@ -23,6 +23,7 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		
 		Recensement recensement = RecensementUtils.lire("C:/temp/recensement population 2016.csv");
 
 		if (recensement==null){
@@ -77,8 +78,11 @@ public class Application {
 				AfficherVillesPlusPeupleesFrance villesPlusPeupleesFrance = new AfficherVillesPlusPeupleesFrance();
 				villesPlusPeupleesFrance.traiter(recensement, scanner);
 				break;
+			case 9:
+				System.out.println("Au revoir.");
+				break;
 			}
-		} while (choix!=99);
+		} while (choix!=9);
 		
 		scanner.close();
 		
@@ -95,8 +99,8 @@ public class Application {
 		System.out.println("4. Afficher les 10 régions les plus peuplées.");
 		System.out.println("5. Afficher les 10 départements les plus peuplés.");
 		System.out.println("6. Afficher les 10 villes les plus peuplées d'un département.");
-		System.out.println("7.  Afficher les 10 villes les plus peuplées d'une région.");
-		System.out.println("8.  Afficher les 10 villes les plus peuplées de France.");
-		System.out.println("99. Sortir");
+		System.out.println("7. Afficher les 10 villes les plus peuplées d'une région.");
+		System.out.println("8. Afficher les 10 villes les plus peuplées de France.");
+		System.out.println("9. Sortir");
 	}
 }

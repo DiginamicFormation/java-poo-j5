@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.VilleComparateur;
+import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
 public class AfficherVillesPlusPeupleesRegion extends MenuService {
 
@@ -25,7 +25,7 @@ public class AfficherVillesPlusPeupleesRegion extends MenuService {
 			}
 		}
 		
-		Collections.sort(villesRegions, new VilleComparateur(false));
+		Collections.sort(villesRegions, new EnsemblePopComparateur(false));
 		
 		if (villesRegions.size()>0){
 			for (int i=0; i<10; i++){

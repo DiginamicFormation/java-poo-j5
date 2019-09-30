@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.VilleComparateur;
+import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
 public class AfficherVillesPlusPeupleesDepartement extends MenuService{
 
@@ -25,7 +25,7 @@ public class AfficherVillesPlusPeupleesDepartement extends MenuService{
 			}
 		}
 		
-		Collections.sort(villesDept, new VilleComparateur(false));
+		Collections.sort(villesDept, new EnsemblePopComparateur(false));
 		
 		if (villesDept.size()>0){
 			System.out.println("Les 10 villes les plus peuplées du département "+choix+" :");
