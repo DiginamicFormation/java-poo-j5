@@ -9,20 +9,20 @@ import fr.diginamic.recensement.services.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.RecherchePopulationVille;
 import fr.diginamic.recensement.utils.RecensementUtils;
 
-/** Application de traitement des données de recensement de population
+/** Application de traitement des donnÃ©es de recensement de population
  * @param args
  */
 public class Application {
 	
-	/** Point d'entrée
-	 * @param args arguments (non utilisés ici)
+	/** Point d'entrÃ©e
+	 * @param args arguments (non utilisÃ©s ici)
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Recensement recensement = RecensementUtils.lire("C:/temp/recensement population 2016.csv");
 
 		if (recensement==null){
-			System.out.println("L'application doit s'arrêtée en raison d'une erreur d'exécution.");
+			System.out.println("L'application doit s'arrÃ©tÃ©e en raison d'une erreur d'exÃ©cution.");
 			System.exit(0);
 		}
 		
@@ -33,13 +33,13 @@ public class Application {
 			// Affichage du menu
 			afficherMenu();
 
-			// Poser une question à l'utilisateur
+			// Poser une question Ã  l'utilisateur
 			String choixMenu = scanner.nextLine();
 			
 			// Conversion du choix utilisateur en int
 			choix = Integer.parseInt(choixMenu);
 			
-			// On exécute l'option correspondant au choix de l'utilisateur
+			// On exÃ©cute l'option correspondant au choix de l'utilisateur
 			switch (choix){
 			case 1:
 				RecherchePopulationVille rechercheVille = new RecherchePopulationVille();
@@ -78,13 +78,13 @@ public class Application {
 	private static void afficherMenu() {
 		System.out.println("***** Recensement population *****");
 		System.out.println("1. Rechercher la population d'une ville");
-		System.out.println("2. Rechercher la population d'un département");
-		System.out.println("3. Rechercher la population d'une région");
-		System.out.println("4. Afficher les 10 régions les plus peuplées.");
-		System.out.println("5. Afficher les 10 départements les plus peuplés.");
-		System.out.println("6. Afficher les 10 villes les plus peuplées d'un département.");
-		System.out.println("7.  Afficher les 10 villes les plus peuplées d'une région.");
-		System.out.println("8.  Afficher les 10 villes les plus peuplées de France.");
+		System.out.println("2. Rechercher la population d'un dÃ©partement");
+		System.out.println("3. Rechercher la population d'une rÃ©gion");
+		System.out.println("4. Afficher les 10 rÃ©gions les plus peuplÃ©es.");
+		System.out.println("5. Afficher les 10 dÃ©partements les plus peuplÃ©s.");
+		System.out.println("6. Afficher les 10 villes les plus peuplÃ©es d'un dÃ©partement.");
+		System.out.println("7.  Afficher les 10 villes les plus peuplÃ©es d'une rÃ©gion.");
+		System.out.println("8.  Afficher les 10 villes les plus peuplÃ©es de France.");
 		System.out.println("99. Sortir");
 	}
 }

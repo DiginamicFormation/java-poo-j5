@@ -15,7 +15,7 @@ public class RecherchePopulationDepartement extends MenuService {
 	@Override
 	public void traiter(Recensement rec, Scanner scanner) {
 		
-		System.out.println("Quel est le code du département recherché ? ");
+		System.out.println("Quel est le code du dÃ©partement recherchÃ© ? ");
 		String choix = scanner.nextLine();
 		
 		List<Ville> villes = rec.getVilles();
@@ -26,10 +26,10 @@ public class RecherchePopulationDepartement extends MenuService {
 			}
 		}
 		if (somme>0){
-			System.out.println("Population du département "+choix+" : "+ somme);
+			System.out.println("Population du dÃ©partement "+choix+" : "+ somme);
 		}
 		else {
-			System.out.println("Département "+choix+ " non trouvé.");
+			System.out.println("DÃ©partement "+choix+ " non trouvÃ©.");
 		}
 	}
 
