@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import fr.diginamic.recensement.entites.Region;
 
-/** Comparateur de 2 régions
+/** Comparateur de 2 rÃ©gions
  * @author DIGINAMIC
  *
  */

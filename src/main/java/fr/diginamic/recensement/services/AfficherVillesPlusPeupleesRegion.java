@@ -9,7 +9,7 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.comparators.VilleComparateur;
 
-/** Cas d'utilisation: affichage des 10 villes les plus peuplées d'une région donnée
+/** Cas d'utilisation: affichage des 10 villes les plus peuplÃ©es d'une rÃ©gion donnÃ©e
  * @author DIGINAMIC
  *
  */
@@ -17,7 +17,7 @@ public class AfficherVillesPlusPeupleesRegion extends MenuService {
 
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
-		System.out.println("Quel est le code de la région ? ");
+		System.out.println("Quel est le code de la rÃ©gion ? ");
 		String choix = scanner.nextLine();
 
 		List<Ville> villesRegions = new ArrayList<Ville>();
@@ -37,7 +37,7 @@ public class AfficherVillesPlusPeupleesRegion extends MenuService {
 				System.out.println("Ville " + ville.getNom() + " : " + ville.getPopulation() + " habitants.");
 			}
 		} else {
-			System.out.println("Région " + choix + " non trouvée.");
+			System.out.println("RÃ©gion " + choix + " non trouvÃ©e.");
 		}
 
 	}

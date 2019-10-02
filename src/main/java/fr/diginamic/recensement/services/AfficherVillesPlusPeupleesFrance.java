@@ -8,7 +8,7 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.comparators.VilleComparateur;
 
-/** Cas d'utilisation: affichage des 10 villes les plus peuplées de France
+/** Cas d'utilisation: affichage des 10 villes les plus peuplÃ©es de France
  * @author DIGINAMIC
  *
  */

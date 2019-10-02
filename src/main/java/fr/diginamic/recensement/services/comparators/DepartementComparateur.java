@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import fr.diginamic.recensement.entites.Departement;
 
-/** Comparateur de 2 départements
+/** Comparateur de 2 dÃ©partements
  * @author DIGINAMIC
  *
  */
