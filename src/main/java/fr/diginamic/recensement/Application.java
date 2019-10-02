@@ -7,17 +7,17 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 
 /**
- * Application de traitement des données de recensement de population
+ * Application de traitement des donnÃ©es de recensement de population
  * 
  * @param args
  */
 public class Application {
 
 	/**
-	 * Point d'entrée
+	 * Point d'entrÃ©e
 	 * 
 	 * @param args
-	 *            arguments (non utilisés ici)
+	 *            arguments (non utilisÃ©s ici)
 	 */
 	public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class Application {
 			File file = new File("C:/temp/recensement population 2016.csv");
 			lignes = FileUtils.readLines(file, "UTF-8");
 
-			// On supprime la ligne d'entête avec les noms des colonnes
+			// On supprime la ligne d'entÃ©te avec les noms des colonnes
 			lignes.remove(0);
 
 			for (String ligne : lignes) {
