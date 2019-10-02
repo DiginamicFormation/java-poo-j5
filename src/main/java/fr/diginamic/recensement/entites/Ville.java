@@ -1,16 +1,16 @@
 package fr.diginamic.recensement.entites;
 
-/** Représente une ville
+/** ReprÃ©sente une ville
  * @author DIGINAMIC
  *
  */
 public class Ville {
 	
-	/** codeRegion : code de la région */
+	/** codeRegion : code de la rÃ©gion */
 	private String codeRegion;
-	/** nomRegion : nom de la région */
+	/** nomRegion : nom de la rÃ©gion */
 	private String nomRegion;
-	/** codeDepartement : code du département */
+	/** codeDepartement : code du dÃ©partement */
 	private String codeDepartement;
 	/** code INSEE de la ville */
 	private String codeVille;
@@ -20,9 +20,9 @@ public class Ville {
 	private int population;
 	
 	/** Constructeur
-	 * @param codeRegion code de la région
-	 * @param nomRegion nom de la région
-	 * @param codeDepartement code du département
+	 * @param codeRegion code de la rÃ©gion
+	 * @param nomRegion nom de la rÃ©gion
+	 * @param codeDepartement code du dÃ©partement
 	 * @param codeVille code INSEE de la ville
 	 * @param nom nom de la ville
 	 * @param population population totale
