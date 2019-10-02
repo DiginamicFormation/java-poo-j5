@@ -12,7 +12,7 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
-/** Affichage des 10 départements les plus peuplés
+/** Affichage des 10 dÃ©partements les plus peuplÃ©s
  * @author DIGINAMIC
  *
  */
@@ -41,7 +41,7 @@ public class AfficherDepartementsPlusPeuplees extends MenuService {
 		
 		for (int i=0; i<10; i++){
 			Departement departement = departements.get(i);
-			System.out.println("Département "+departement.getCode()+" : "+departement.getPopulation()+" habitants.");
+			System.out.println("DÃ©partement "+departement.getCode()+" : "+departement.getPopulation()+" habitants.");
 		}
 		
 	}

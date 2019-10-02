@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
 
-/** Classe représentant un service
+/** Classe reprÃ©sentant un service
  * @author DIGINAMIC
  *
  */
 public abstract class MenuService {
 
-	/** Méthode abstraite de traitement que doivent posséder toutes les méthodes de services 
+	/** MÃ©thode abstraite de traitement que doivent possÃ©der toutes les mÃ©thodes de services 
 	 * @param lignes lignes du fichier
 	 * @param scanner scanner
 	 */

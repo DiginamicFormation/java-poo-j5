@@ -15,7 +15,7 @@ public class RecherchePopulationVille extends MenuService {
 	@Override
 	public void traiter(Recensement rec, Scanner scanner) {
 		
-		System.out.println("Quel est le nom de la ville recherchée ? ");
+		System.out.println("Quel est le nom de la ville recherchÃ©e ? ");
 		String choix = scanner.nextLine();
 		
 		List<Ville> villes = rec.getVilles();
