@@ -6,13 +6,13 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.utils.RecensementUtils;
 
-/** Application de traitement des données de recensement de population
+/** Application de traitement des donnÃ©es de recensement de population
  * @param args
  */
 public class Application {
 	
-	/** Point d'entrée
-	 * @param args arguments (non utilisés ici)
+	/** Point d'entrÃ©e
+	 * @param args arguments (non utilisÃ©s ici)
 	 */
 	public static void main(String[] args) {
 		Recensement recensement = RecensementUtils.lire("C:/temp/recensement population 2016.csv");
