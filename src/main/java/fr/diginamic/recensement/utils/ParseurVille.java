@@ -21,7 +21,7 @@ public class ParseurVille {
 		String codeDepartement = morceaux[2];
 		String codeCommune = morceaux[5];
 		String nomCommune = morceaux[6];
-		int populationTotale = Integer.parseInt(morceaux[9].replace(" ", "").trim());
+		int populationTotale = Integer.parseInt(morceaux[7].replace(" ", "").trim());
 		
 		// On cree maintenant la ville avec toutes ses données
 		Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
