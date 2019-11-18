@@ -1,8 +1,8 @@
-package fr.diginamic.recensement.services.comparators;
+package fr.diginamic.recensement.diff.services.comparators;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.diff.entites.Ville;
 
 /** Comparateur de 2 villes
  * @author DIGINAMIC

@@ -1,17 +1,17 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.diff;
 
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.services.AfficherDepartementsPlusPeuplees;
-import fr.diginamic.recensement.services.AfficherRegionsPlusPeuplees;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesDepartement;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesFrance;
-import fr.diginamic.recensement.services.AfficherVillesPlusPeupleesRegion;
-import fr.diginamic.recensement.services.RecherchePopulationDepartement;
-import fr.diginamic.recensement.services.RecherchePopulationRegion;
-import fr.diginamic.recensement.services.RecherchePopulationVille;
-import fr.diginamic.recensement.utils.RecensementUtils;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.services.AfficherDepartementsPlusPeuplees;
+import fr.diginamic.recensement.diff.services.AfficherRegionsPlusPeuplees;
+import fr.diginamic.recensement.diff.services.AfficherVillesPlusPeupleesDepartement;
+import fr.diginamic.recensement.diff.services.AfficherVillesPlusPeupleesFrance;
+import fr.diginamic.recensement.diff.services.AfficherVillesPlusPeupleesRegion;
+import fr.diginamic.recensement.diff.services.RecherchePopulationDepartement;
+import fr.diginamic.recensement.diff.services.RecherchePopulationRegion;
+import fr.diginamic.recensement.diff.services.RecherchePopulationVille;
+import fr.diginamic.recensement.diff.utils.RecensementUtils;
 
 /** Application de traitement des données de recensement de population
  * @param args

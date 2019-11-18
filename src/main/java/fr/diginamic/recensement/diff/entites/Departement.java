@@ -1,18 +1,16 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.diff.entites;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/** Représente une région
+/** Représente un département
  * @author DIGINAMIC
  *
  */
-public class Region {
+public class Departement {
 
 	/** code : String*/
 	private String code;
-	/** nom : String*/
-	private String nom;
 	/** population : int*/
 	private int population;
 	
@@ -21,12 +19,10 @@ public class Region {
 	
 	/** Constructeur
 	 * @param code code
-	 * @param nom nom
 	 */
-	public Region(String code, String nom) {
+	public Departement(String code) {
 		super();
 		this.code = code;
-		this.nom = nom;
 	}
 	
 	/** Ajoute une ville
@@ -48,18 +44,6 @@ public class Region {
 	 */
 	public void setCode(String code) {
 		this.code = code;
-	}
-	/** Getter
-	 * @return the nom
-	 */
-	public String getNom() {
-		return nom;
-	}
-	/** Setter
-	 * @param nom the nom to set
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
 	}
 	/** Getter
 	 * @return the population

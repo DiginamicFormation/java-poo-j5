@@ -1,10 +1,10 @@
-package fr.diginamic.recensement.services;
+package fr.diginamic.recensement.diff.services;
 
 import java.util.List;
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Ville;
 
 /** Recherche et affichage de la population d'une région
  * @author DIGINAMIC

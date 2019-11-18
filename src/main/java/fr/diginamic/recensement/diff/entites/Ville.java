@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.diff.entites;
 
 /** Représente une ville
  * @author DIGINAMIC

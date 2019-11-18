@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.services;
+package fr.diginamic.recensement.diff.services;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.entites.Region;
-import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.RegionComparateur;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Region;
+import fr.diginamic.recensement.diff.entites.Ville;
+import fr.diginamic.recensement.diff.services.comparators.RegionComparateur;
 
 /** Affichage des 10 régions les plus peuplées
  * @author DIGINAMIC
