@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.normal.entites;
 
 /** Représente une ville
  * @author DIGINAMIC

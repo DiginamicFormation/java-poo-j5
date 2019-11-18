@@ -1,4 +1,4 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.diff;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Ville;
 
 /** Application de traitement des données de recensement de population
  * @param args
