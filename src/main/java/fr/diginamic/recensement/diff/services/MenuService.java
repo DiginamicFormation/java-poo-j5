@@ -1,8 +1,8 @@
-package fr.diginamic.recensement.services;
+package fr.diginamic.recensement.diff.services;
 
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Recensement;
 
 /** Classe représentant un service
  * @author DIGINAMIC
