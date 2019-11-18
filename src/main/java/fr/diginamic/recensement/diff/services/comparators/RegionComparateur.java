@@ -1,8 +1,8 @@
-package fr.diginamic.recensement.services.comparators;
+package fr.diginamic.recensement.diff.services.comparators;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.entites.Region;
+import fr.diginamic.recensement.diff.entites.Region;
 
 /** Comparateur de 2 régions
  * @author DIGINAMIC
