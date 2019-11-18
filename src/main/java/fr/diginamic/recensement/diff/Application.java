@@ -1,4 +1,4 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.diff;
 
 import java.io.File;
 import java.io.IOException;
