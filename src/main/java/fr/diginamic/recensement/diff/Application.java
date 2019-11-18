@@ -1,9 +1,9 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.diff;
 
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.utils.RecensementUtils;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.utils.RecensementUtils;
 
 /** Application de traitement des données de recensement de population
  * @param args

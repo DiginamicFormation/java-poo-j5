@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.normal.entites;
 
 /** Représente une ville
  * @author DIGINAMIC
@@ -35,6 +35,12 @@ public class Ville {
 		this.codeVille = codeVille;
 		this.nom = nom;
 		this.population = population;
+	}
+	
+
+	@Override
+	public String toString(){
+		return nom + " " + codeDepartement + " " + nomRegion + " -> " + population;
 	}
 
 	/** Getter
