@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.utils;
+package fr.diginamic.recensement.diff.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
-import fr.diginamic.recensement.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Recensement;
 
 /** Classe permettant de lire le contenu d'un fichier
  * @author DIGINAMIC
