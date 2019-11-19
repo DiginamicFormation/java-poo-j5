@@ -3,11 +3,15 @@ package fr.diginamic.recensement.normal;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
+import fr.diginamic.recensement.normal.entites.Departement;
+import fr.diginamic.recensement.normal.entites.DepartementComparateur;
 import fr.diginamic.recensement.normal.entites.Ville;
 import fr.diginamic.recensement.normal.utils.PlusGrandeVilleComparator;
 import fr.diginamic.recensement.normal.utils.PlusPetiteVilleComparator;
@@ -143,10 +147,42 @@ public class Application {
 		
 		// Afficher le département le plus peuplé de la région Occitanie
 		System.out.println("---------------------------------------------------");
-		System.out.println("Affichage des 10 plus grandes villes de la région");
-		Collections.sort(villesRegionsOcc, new PlusGrandeVilleComparator());
-		for (int i=0; i<10; i++){
-			System.out.println(villesRegionsOcc.get(i));
+		System.out.println("Affichage du département le plus peuplé de la région");
+		
+		HashMap<String, Departement> mapDepts = new HashMap<>();
+		for (int i=0; i<villes.size(); i++){
+			Ville v = villes.get(i);
+			
+			// On recherche toutes les villes de la région
+			if (v.getCodeRegion().equals("76")){
+				
+				// Dès qu'on trouve une ville de la région, on recupère son département
+				String codeDept = v.getCodeDepartement();
+				
+				// Puis on recherche le département stocké dans la HashMap avec ce code
+				Departement dept = mapDepts.get(codeDept);
+				
+				// Si le département précédent n'existe pas, on le créé et on le stocke
+				// dans la map
+				if (dept==null){
+					dept = new Departement(v.getCodeDepartement());
+					mapDepts.put(v.getCodeDepartement(), dept);
+				}
+				
+				// Ensuite on ajoute la population de la ville à la population du département
+				dept.setPopulation(dept.getPopulation()+v.getPopulation());
+				
+			}
 		}
+		
+		// Une fois la création de la Map terminée, on récupère tous les départements
+		// et on les tri.
+		ArrayList<Departement> listeDepts = new ArrayList<>();
+		listeDepts.addAll(mapDepts.values());
+		
+		Collections.sort(listeDepts, new DepartementComparateur(false));
+		
+		System.out.println("Le département le plus peuplé de la région est "+ listeDepts.get(0));
+		
 	}
 }
