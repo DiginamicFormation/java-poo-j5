@@ -10,12 +10,12 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 
 import fr.diginamic.recensement.normal.entites.Departement;
-import fr.diginamic.recensement.normal.entites.DepartementComparateur;
 import fr.diginamic.recensement.normal.entites.Region;
-import fr.diginamic.recensement.normal.entites.RegionComparateur;
 import fr.diginamic.recensement.normal.entites.Ville;
+import fr.diginamic.recensement.normal.utils.DepartementComparator;
 import fr.diginamic.recensement.normal.utils.PlusGrandeVilleComparator;
 import fr.diginamic.recensement.normal.utils.PlusPetiteVilleComparator;
+import fr.diginamic.recensement.normal.utils.RegionComparator;
 
 /** Application de traitement des données de recensement de population
  * @param args
@@ -181,7 +181,7 @@ public class Application {
 		ArrayList<Departement> listeDepts = new ArrayList<>();
 		listeDepts.addAll(mapDepts.values());
 		
-		Collections.sort(listeDepts, new DepartementComparateur(false));
+		Collections.sort(listeDepts, new DepartementComparator(false));
 		
 		System.out.println("Le département le plus peuplé de la région est "+ listeDepts.get(0));
 		
@@ -215,7 +215,7 @@ public class Application {
 		ArrayList<Region> listeRegions = new ArrayList<>();
 		listeRegions.addAll(mapRegions.values());
 		
-		Collections.sort(listeRegions, new RegionComparateur(false));
+		Collections.sort(listeRegions, new RegionComparator(false));
 		
 		for (int i=0; i<10; i++){
 			System.out.println(listeRegions.get(i));
@@ -252,7 +252,7 @@ public class Application {
 		listeDepts = new ArrayList<>();
 		listeDepts.addAll(mapDepts.values());
 		
-		Collections.sort(listeDepts, new DepartementComparateur(false));
+		Collections.sort(listeDepts, new DepartementComparator(false));
 		
 		System.out.println("Le département le plus peuplé de la région est "+ listeDepts.get(0));
 		for (int i=0; i<10; i++){

@@ -1,6 +1,8 @@
-package fr.diginamic.recensement.normal.entites;
+package fr.diginamic.recensement.normal.utils;
 
 import java.util.Comparator;
+
+import fr.diginamic.recensement.normal.entites.Ville;
 
 public class VilleAlphabetiqueComparator implements Comparator<Ville> {
 

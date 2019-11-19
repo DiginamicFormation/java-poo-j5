@@ -1,14 +1,15 @@
-package fr.diginamic.recensement.normal.entites;
+package fr.diginamic.recensement.normal.utils;
 
 import java.util.Comparator;
 
 import fr.diginamic.recensement.normal.entites.Departement;
+import fr.diginamic.recensement.normal.entites.Region;
 
 /** Comparateur de 2 départements
  * @author DIGINAMIC
  *
  */
-public class DepartementComparateur implements Comparator<Departement> {
+public class RegionComparator implements Comparator<Region> {
 	
 	/**  Sens du tri: ascendant (true) ou descendant (false) */
 	private boolean asc;
@@ -16,12 +17,12 @@ public class DepartementComparateur implements Comparator<Departement> {
 	/** Constructeur
 	 * @param asc sens du tri
 	 */
-	public DepartementComparateur(boolean asc){
+	public RegionComparator(boolean asc){
 		this.asc=asc;
 	}
 
 	@Override
-	public int compare(Departement o1, Departement o2) {
+	public int compare(Region o1, Region o2) {
 		if (asc){
 			if (o1.getPopulation()>o2.getPopulation()){
 				return 1;
