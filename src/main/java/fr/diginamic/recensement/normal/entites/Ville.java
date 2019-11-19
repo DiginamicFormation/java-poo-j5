@@ -1,10 +1,10 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.normal.entites;
 
 /** Représente une ville
  * @author DIGINAMIC
  *
  */
-public class Ville implements EnsemblePop {
+public class Ville {
 	
 	/** codeRegion : code de la région */
 	private String codeRegion;
@@ -35,6 +35,11 @@ public class Ville implements EnsemblePop {
 		this.codeVille = codeVille;
 		this.nom = nom;
 		this.population = population;
+	}
+	
+	@Override
+	public String toString(){
+		return nom + " " + codeDepartement + " " + nomRegion + " -> " + population + " hab";
 	}
 
 	/** Getter

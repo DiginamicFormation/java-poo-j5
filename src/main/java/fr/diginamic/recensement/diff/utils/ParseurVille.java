@@ -1,7 +1,7 @@
-package fr.diginamic.recensement.utils;
+package fr.diginamic.recensement.diff.utils;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Ville;
 
 /** Permet de constituer notre recensement progressivement é partir des lignes du fichier
  * @author DIGINAMIC

@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.diff.entites;
 
 import java.util.ArrayList;
 import java.util.List;

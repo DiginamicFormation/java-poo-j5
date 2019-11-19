@@ -1,13 +1,13 @@
-package fr.diginamic.recensement.services;
+package fr.diginamic.recensement.diff.services;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-import fr.diginamic.recensement.entites.Recensement;
-import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
+import fr.diginamic.recensement.diff.entites.Recensement;
+import fr.diginamic.recensement.diff.entites.Ville;
+import fr.diginamic.recensement.diff.services.comparators.EnsemblePopComparateur;
 
 /** Cas d'utilisation: affichage des 10 villes les plus peuplées d'une département donné
  * @author DIGINAMIC

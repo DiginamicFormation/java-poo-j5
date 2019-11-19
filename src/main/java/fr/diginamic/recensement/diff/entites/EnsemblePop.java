@@ -1,4 +1,4 @@
-package fr.diginamic.recensement.entites;
+package fr.diginamic.recensement.diff.entites;
 
 /** Représente tout ce qui posséde une population: pays, région, département, canton, ville, etc...
  * @author DIGINAMIC

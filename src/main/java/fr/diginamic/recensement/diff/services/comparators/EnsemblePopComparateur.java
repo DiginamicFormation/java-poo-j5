@@ -1,8 +1,8 @@
-package fr.diginamic.recensement.services.comparators;
+package fr.diginamic.recensement.diff.services.comparators;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.entites.EnsemblePop;
+import fr.diginamic.recensement.diff.entites.EnsemblePop;
 
 /** Permet de comparer 2 instances de classe qui implémentent l'interface {@link EnsemblePop}
  * @author DIGINAMIC
